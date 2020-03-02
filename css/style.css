@@ -9,8 +9,10 @@ body {
 }
 
 html,body {
-      width: 100%;
+     width: 100%;
      overflow-x: hidden;
+		 margin: 0;
+		 
   }
 
 /* Typography
@@ -109,7 +111,7 @@ a {text-decoration: none !important;}
   padding-bottom: 60px;
 }
 
-#service {	
+#service {
   padding-top: 20px;
   padding-bottom: 60px;
 }

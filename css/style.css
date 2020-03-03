@@ -12,7 +12,7 @@ html,body {
      width: 100%;
      overflow-x: hidden;
 		 margin: 0;
-		 
+
   }
 
 /* Typography
@@ -361,9 +361,9 @@ a {text-decoration: none !important;}
 .img-fluid {
   max-width: 100%;
   height: auto;
-	border-width: 5px;
-	border-style: double;
-	border-color: #B86A21;
+	border-width: 2px;
+	border-style: solid;
+	border-color: blue;
 	border-radius: 5px;
 }
 

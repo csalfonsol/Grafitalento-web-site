@@ -261,8 +261,11 @@ a {text-decoration: none !important;}
   text-align: center;
 }
 
-#home .btn {
-  margin-right: 12px;
+.home-box {
+  background-color: rgba(110, 128, 201, 0.7);
+  border-radius: 32px;
+  padding-top: 5px;
+  padding-bottom: 20px;
 }
 
 

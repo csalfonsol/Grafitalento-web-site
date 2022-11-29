@@ -1,0 +1,126 @@
+
+/* Using global variables in CSS */ 
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+
+}
+
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    margin: 0;
+}
+
+
+.login {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.form-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+}
+
+.logo {
+    width: 150px;
+    margin-bottom: 48px;
+    justify-self: center;
+    display: none;    
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form a {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 54px;
+}
+
+.label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.input {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+}
+
+.input-email {
+    margin-bottom: 22px;
+
+}
+
+.primary-button {
+    background-color: var(--hospital-green);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    width: 100%;
+    height: 60px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.secondary-button {
+    background-color: var(--white);
+    border: 1px solid var(--hospital-green);
+    border-radius: 8px;
+    color: var(--hospital-green);
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+}
+
+.login-button {
+    margin-top: 14px;
+    margin-bottom: 30px;
+}
+
+
+/* Logo shows only in smarthphones */
+@media (max-width: 600px) {
+  .logo {
+    display: block;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  body {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .secondary-button {    
+    position: absolute;
+    bottom: 20px;    
+  }
+}
